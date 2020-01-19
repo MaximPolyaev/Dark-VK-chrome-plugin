@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "Dark-vk",
+    "version": "1.0",
+    "description": "Dark theme for vk",
+    "browser_action": {
+        "default_icon": "dark-icon.png"
+    },
+    "content_scripts": [ 
+        {
+            "matches": ["https://vk.com/*"],
+            "js": ["dark-scripts/dark-script.js"]
+            
+        }
+    ]
+}
